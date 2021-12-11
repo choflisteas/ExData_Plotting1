@@ -13,5 +13,5 @@ end <- as.Date("2007-02-03")
 
 with(subset(data, Date>= start & Date<end),hist(feb$Global_active_power, xlab = "Global Active Power(kilowatts)", col = "red", main = "Global Active Power",xlim = c(0,8), ylim = c(0,1200)))
 
-dev.copy(png, file = paste0(getwd(), "/", "plot2.png"), width = 480, height = 480)
+dev.copy(png, file = paste0(getwd(), "/", "plot1.png"), width = 480, height = 480)
 dev.off()
